@@ -2,14 +2,14 @@
 
 ## set up
 
-- update 3rd dependency
+update 3rd dependency
 
 ```zsh
 git submodule init
 git submodule update
 ```
 
-- build skynet
+build skynet
 
 ```zsh
 cd 3rd/skynet && make macosx(or linux)
