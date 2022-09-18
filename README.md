@@ -1,4 +1,4 @@
-# skynet developping guidline
+# skynet developing guidline
 
 ## set up
 
