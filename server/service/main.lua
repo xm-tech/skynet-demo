@@ -1,14 +1,11 @@
 local skynet = require "skynet"
+local system_conf = require "conf.system"
 
 skynet.start(function ()
 	skynet.error("service main start")
 
 	-- start debug_console service
-	local debug_console_port = skynet.getenv("debug_console_port")
-	skynet.error("debug_console_port", debug_console_port)
-	if debug_console_port then
-		skynet.newservice("debug_console", tonumber(debug_console_port))
-	end
+	skynet.newservice("debug_console", system_conf.debug_console_port)
 
 	skynet.exit()
 
