@@ -12,5 +12,3 @@ cpath = skynet_root.."cservice/?.so"
 luaservice = skynet_root.."service/?.lua;"..root.."server/service/?.lua"
 lualoader = skynet_root.."lualib/loader.lua"
 snax = skynet_root.."?.lua;"
-
-debug_console_port = 8888
