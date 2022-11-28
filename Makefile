@@ -1,6 +1,6 @@
 platform = macosx
 
-skynet:
+build:
 	cd 3rd/skynet && make $(platform)
 
 run:
