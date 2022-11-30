@@ -1,6 +1,4 @@
 local skynet = require "skynet"
-local mysql_conf = require "mysql_conf"
-local mysql = require "skynet.db.mysql"
 
 local function dump(res)
     local getIndent, quoteStr, wrapKey, wrapVal, dumpObj
@@ -49,6 +47,8 @@ end
 
 
 skynet.start(function ()
+	local mysql_conf = require "mysql_conf"
+	local mysql = require "skynet.db.mysql"
 	print(mysql_conf.host, mysql_conf.user, mysql_conf.password, mysql_conf.port, mysql_conf.db, mysql_conf.charset)
 
 	local function on_connect(db)
