@@ -40,3 +40,7 @@ room : 游戏逻辑
 cluster 感觉是一个比较复杂的方案， 可不可以用 grpc 呢？ 可不可以用 etcd/zk 之类的?
 
 ## skynet 文档挺完善的，不明白的API和设计可以很方便的查阅
+
+## TODO
+
+mysql, redis, es, kafka, grpc

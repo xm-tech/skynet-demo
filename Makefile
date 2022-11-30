@@ -1,5 +1,9 @@
 platform = macosx
 
+update3rd:
+	rm -rf 3rd/skynet && rm -rf 3rd/openssl
+	git submodule update --init --recursive
+
 build:
 	cd 3rd/skynet && make $(platform)
 
