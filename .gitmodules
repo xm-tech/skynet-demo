@@ -3,4 +3,4 @@
 	url = git@github.com:cloudwu/skynet.git
 [submodule "3rd/openssl"]
 	path = 3rd/openssl
-	url = git@github.com:openssl/openssl.git
+	url = git@github.com:xm-tech/openssl.git
